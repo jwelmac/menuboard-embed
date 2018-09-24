@@ -36,7 +36,7 @@ See [Stencil Components Framework Integration](https://stenciljs.com/docs/framew
   </head>
 
   <div style="width: 100%; height: 100vh; padding:0; margin:0;">
-    <ms-menuboard-embed auth_key="{{AUTH_KEY}}"></ms-menuboard-embed>
+    <ms-menuboard-embed provider="{{PROVIDER}}" auth_key="{{AUTH_KEY}}"></ms-menuboard-embed>
   </div>
 
 ```
