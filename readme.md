@@ -4,13 +4,36 @@ Embed your [MealSuite](https://www.mealsuite.com) Menuboard into your website.
 
 > Requires a current subscription
 
-## Using this component
+## Including this component
 
 ### Script tag
-- Put a script tag similar to this `<script src='https://unpkg.com/menuboard-embed@0.0.1/dist/ms-menuboard-embed.js'></script>` in the head of your index.html
+- Put a script tag similar to this `<script src='https://unpkg.com/menuboard-embed/dist/ms-menuboard-embed.js'></script>` in the head of your index.html
 - Then you can use the element anywhere in your template, JSX, html etc
 
 ### Node Modules
 - Run `npm install menuboard-embed --save`
 - Put a script tag similar to this `<script src='node_modules/menuboard-embed/dist/ms-menuboard-embed.js'></script>` in the head of your index.html
 - Then you can use the element anywhere in your template, JSX, html etc
+
+
+## Usage
+After including the tag insert the `ms-menuboard-embed` component in your webpage/web app where you want to display the menuboard.
+
+The menuboard will take the full width and height of the element it is nested in.
+
+| Attribute | Description | Default |
+|:----------|-------------|---------|
+| auth_key  | Auth key generated from your MenuStreams Admin Dashboard | null |
+| provider  | synergy, threesquares, revera or myusuite | synergy |
+
+## Example
+```html
+  <head>
+    <script src='https://unpkg.com/menuboard-embed/dist/ms-menuboard-embed.js'></script>
+  </head>
+
+  <div style="width: 100%; height: 100vh; padding:0; margin:0;">
+    <ms-menuboard-embed auth_key="{{AUTH_KEY}}"></ms-menuboard-embed>
+  </div>
+
+```
