@@ -26,6 +26,9 @@ The menuboard will take the full width and height of the element it is nested in
 | auth_key  | Auth key generated from your MenuStreams Admin Dashboard | null |
 | provider  | synergy, threesquares, revera or myusuite | synergy |
 
+### Framework Integration
+See [Stencil Components Framework Integration](https://stenciljs.com/docs/framework-integration)
+
 ## Example
 ```html
   <head>
